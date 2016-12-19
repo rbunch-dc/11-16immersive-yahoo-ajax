@@ -1,7 +1,28 @@
 // console.log("Test");
 
+// 1. Make getJson into a function so you can call it whenver oyu need to.
+// 2. Instead of auto saving their symbols, you give them a save button
+// 3. Retreive button?
+// 4. Put bookmarks on the side of teh page2
+// 5. Automatically refresh all stocks every X seconds
+// 6. Keep the watchlist stocks in a separate table from searched stocks
+// 7. Keep a "Recent" localStorage var, and a "saved" localStorage var
+// 8. Pair up with BlackJack
+
 // WAIT FOR THE DOM!!!
 $(document).ready(function(){
+
+	$('#arrow1').click(function(){
+		$('#page1,#page2').animate({
+			'right':'100vw'
+		},100);
+	});
+	$('#arrow2').click(function(){
+		$('#page1,#page2').animate({
+			'right':'0vw'
+		},100);		
+	})
+
 
 	// See if the user has any stored stocks. If so, then load them
 	var userStocksSaved = localStorage.getItem('userStocks');
