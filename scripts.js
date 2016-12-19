@@ -13,14 +13,14 @@
 $(document).ready(function(){
 
 	$('#arrow1').click(function(){
-		$('#page1,#page2').animate({
+		$('#page1,#page2').css({
 			'right':'100vw'
-		},100);
+		});
 	});
 	$('#arrow2').click(function(){
-		$('#page1,#page2').animate({
+		$('#page1,#page2').css({
 			'right':'0vw'
-		},100);		
+		});		
 	})
 
 
